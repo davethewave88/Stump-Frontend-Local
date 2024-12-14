@@ -1,0 +1,86 @@
+/* Login.module.css */
+
+
+.title {
+    font-size: 8rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+
+.subtitle {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Image styling */
+.logo {
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+label {
+    font-size: 1.4rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Form input styling  */
+input {
+    padding: 12px;
+    margin: 15px;
+    width: 100%;
+    max-width: 400px;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Button styling  */
+.loginButton {
+    background-color: white;
+    padding: 1rem 2rem;
+    margin: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: green;
+    border-color: #04AA6D;
+}
+
+/* Button hover effect */
+.loginButton:hover {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.createAccount{
+    background-color: white;
+    padding: 1rem 2rem;
+    margin: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: blue;
+    border-color: dodgerblue;
+}
+
+.createAccount:hover {
+    background: #2196F3;
+    color: white;
+}
+
+.createAccount h4{
+    color: red;
+}
+
+@media (max-width: 768px) {
+    .loginButton, .createAccount {
+        padding: 10px 20px; /* Adjusting button padding for smaller screens */
+        font-size: 1rem;    /* Reducing font size */
+    }
+}

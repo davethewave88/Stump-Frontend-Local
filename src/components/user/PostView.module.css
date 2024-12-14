@@ -1,0 +1,95 @@
+/* Comment list styling */
+
+.commentUl {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.commentLi {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+/* Flexbox for the post content */
+.commentLiDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+/* Post description styling */
+.desc {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+/* Post ID and time styling */
+.meta {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.commentLi:hover {
+    background-color: #f0f0f0; /* Slightly darker gray on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+}
+
+@media (max-width: 768px) {
+    .commentLi {
+        padding: 20px; /* Reduce padding on smaller screens */
+    }
+    .title {
+        font-size: 20px; /* Smaller title font on smaller screens */
+    }
+    .desc {
+        font-size: 16px; /* Smaller description font on smaller screens */
+    }
+}
+
+/*like/dislike button styling*/
+.like, .dislike {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+}
+
+/* Button hover effect */
+.like:hover  {
+    background-color: lightgreen;
+    color: white;
+    border-color: darkgreen;
+}
+.dislike:hover {
+    background-color: red;
+    color: white;
+    border-color: darkred;
+}
+
+/* Style for 'Like' button */
+.like {
+    color: #28a745; /* Green */
+    border-color: #28a745;
+}
+
+/* Style for 'Dislike' button */
+.dislike {
+    color: #dc3545; /* Red */
+    border-color: #dc3545;
+}
+
+/* Button when clicked (active state) */
+.like:active, .dislike:active {
+    transform: scale(0.98); /* Slightly reduce the button size for a pressed effect */
+}

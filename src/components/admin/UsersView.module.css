@@ -1,0 +1,25 @@
+/*styles for users, posts, and comments tables*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;  /* Light grey border */
+}
+
+th {
+    background-color: #f0f0f0;  /* Light grey background for headers */
+    color: #555;
+}
+
+tr:nth-child(even) {
+    background-color: #fafafa;  /* Zebra-striping for table rows */
+}
+
+tr:hover {
+    background-color: #f1f1f1;  /* Light hover effect */
+}

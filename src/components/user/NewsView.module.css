@@ -1,0 +1,70 @@
+.news {
+    font-size: 3rem;
+}
+
+/* NewsView post list styling */
+.newsUl {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.newsLi {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+/* Flexbox for the post content */
+.newsLiDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Post title styling */
+.title {
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+    font-size: 24px;
+}
+
+/* Post description styling */
+.desc {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.link {
+    margin: 10px 0;
+    color: #555;
+    font-size: 18px;
+}
+
+/* Post ID and time styling */
+.meta {
+    font-size: 16px; /* Font size for post metadata (ID and time) */
+    color: #888; /* Lighter gray for the post metadata */
+    margin-bottom: 15px; /* Space below the metadata */
+}
+
+.newsLi:hover {
+    background-color: #f0f0f0; /* Slightly darker gray on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+}
+
+@media (max-width: 768px) {
+    .newsLi {
+        padding: 20px; /* Reduce padding on smaller screens */
+    }
+    .title {
+        font-size: 20px; /* Smaller title font on smaller screens */
+    }
+    .desc {
+        font-size: 16px; /* Smaller description font on smaller screens */
+    }
+}

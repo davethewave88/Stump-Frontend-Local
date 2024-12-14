@@ -1,0 +1,121 @@
+.name {
+    font-size: 4rem;
+}
+
+.bio {
+    font-size: 1.5rem;
+    color: darkgreen;
+}
+
+.bioButton {
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: green;
+    border-color: #04AA6D;
+}
+
+/* Button hover effect */
+.bioButton:hover {
+    background-color: green;
+    color: white;
+}
+
+.border{
+    margin: 100%;
+    margin: 20px 0;
+    border-top: 2px solid #333;
+    display: block;
+}
+
+.postButton {
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: dodgerblue;
+    border-color: #04AA6D;
+}
+
+/* Button hover effect */
+.postButton:hover {
+    background-color: dodgerblue;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .bioButton, .postButton {
+        padding: 10px 20px; /* Adjusting button padding for smaller screens */
+        font-size: 1rem;    /* Reducing font size */
+    }
+}
+
+/* NewsView post list styling */
+.newsUl {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.newsLi {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+/* Flexbox for the post content */
+.newsLiDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Post title styling */
+.title {
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+    font-size: 24px;
+}
+
+/* Post description styling */
+.desc {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.link {
+    margin: 10px 0;
+    color: #555;
+    font-size: 18px;
+}
+
+/* Post ID and time styling */
+.meta {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.newsLi:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .newsLi {
+        padding: 20px; /* Reduce padding on smaller screens */
+    }
+    .title {
+        font-size: 20px; /* Smaller title font on smaller screens */
+    }
+    .desc {
+        font-size: 16px; /* Smaller description font on smaller screens */
+    }
+}
